@@ -8,8 +8,11 @@ import org.springframework.web.servlet.ModelAndView;
 public class ScreenController {
 
     @GetMapping("/")
-    public String renderScreenShare(){
+    public String open(){
         return "screen.html";
     }
-
+    @GetMapping("/hello")
+    public String openAgain(){
+        return "new.html";
+    }
 }
